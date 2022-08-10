@@ -160,7 +160,7 @@ main{
 }
 
 h1{
-    font-size: large;
+    font-size: x-large;
     font-weight: 600;
 }
 
@@ -295,7 +295,15 @@ abc */
     color: hsl(178, 100%, 50%);
 }
 
+.text_hover{
+    color: white;
+}
+
 /* Here starts text design */
 .cost{
     color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.NFT_description{
+    font-size: large;
 }
