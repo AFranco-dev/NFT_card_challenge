@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+h1{
+    font-size: large;
+    font-weight: 600;
+}
+
+footer{
+    flex-grow: 0;
+    padding: 1em;
+}
+/* this is the panel main layout */
+.panel{
+    max-width: 350px;
+    min-height: 600px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 0px 5px 15px hsla(216, 50%, 9%, 1), 0px 0px 5px 45px hsla(216, 50%, 10%, 1);
+}
+/* abc
+abc
+here start the img and hover effect
+abc
+abc */
+.imgWrap{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    flex-grow: 0;
+}
+
+.stand{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.hover_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.0;
+    background-color: rgba(0, 255, 246, 0.3);
+    border-radius: 10px;
+}
+
+.hover_container:hover{
+    transition:0.3s ease-in;
+    opacity: 1.0;
+}
+/* abc
+abc
+here overs the img and hover effect
+abc
+abc */
+
+/* abc
+abc
+here start the description
+abc
+abc */
+
+/* here starts the main description layout */
+.description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.description > div{
+    padding: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.description > div:nth-child(3) {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+/* here finish the main description layout */
+
+
+/* here start the details main layout */
+.blockODetails{
+    display: flex;
+    justify-content: space-between;
+}
+.blockODetails>div{
+    display: flex;
+}
+.blockODetails > div > span{
+    align-self: center;
+    margin-left: 1em;
+    white-space: nowrap;
+}
+/* here finish the details main layout */
+
+/* here start the creator main layout */
+.creator {
+    display: flex;
+    align-content: center;
+}
+.creator>img {
+    width: 2em;
+    height: 2em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.creator>span {
+    align-self: center;
+    margin-left: 1em;
+}
+/* here finish the creator main layout */
+
+/* Here starts the .description hover effects */
+.text_hover:hover{
+    transition: 0.3s ease-in;
+    color: hsl(178, 100%, 50%);
+}
+
+/* Here starts text design */
+.cost{
+    color: hsl(178, 100%, 50%);
+}
